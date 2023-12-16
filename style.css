@@ -143,6 +143,7 @@ ul>li>a:hover{
     padding: 22px;
     margin-inline: 20px;
     border-radius: 5px;
+    margin-top: 30px;
     background-color: rgb(238, 232, 232);
 }
 .card>p{
@@ -218,6 +219,12 @@ ul>li>a:hover{
     font-size: 16px;
     margin-top: 20px;
     border-radius: 6px;
+    cursor: pointer;
+}
+.contact>button:hover{
+    background-color: transparent;
+    border:2px solid rgb(9, 107, 218);
+    color: black;
 }
 
 /* -------------------------------------------------------------- */
@@ -229,6 +236,9 @@ footer{
     padding: 20px;
     background-color: black;
     color: white;
+}
+.text{
+    margin: 20px 20px 0px 0px;
 }
 .text>h3{
     font-size: 22px;
@@ -244,4 +254,67 @@ footer{
 }
 .text>p:hover{
     border-bottom:2px solid white;
+}
+
+/* -------------------------------------------------------------- */
+/* Responsiveness  */
+
+@media screen and (max-width:1000px){
+    .main{
+        display: block;
+        text-align: center;
+        margin-top: 140px;
+    }
+    .main>img{
+        margin-top: 50px;
+    }
+    .about-text{
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:800px) {
+    ul{
+        display: none;
+    }
+    .showdata{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 24px;
+        background-color: rgb(238, 232, 232);
+        gap: 20px;
+        border-radius: 10px;
+        position: fixed;
+        top: 70px;
+        right: 3%;
+    }
+    #bar-btn{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width:600px) {
+    .main-text>h1{
+        font-size: 38px;
+    }
+    .main-text>h3{
+        font-size: 24px;
+    }
+    .main-text>p{
+        font-size: 22px;
+    }
+    .main>img{
+        width: 80%;
+    }
+    .contact{
+        width: 80%;
+    }
+}
+@media screen and (max-width:380px) {
+    .about>img{
+        width: 90%;
+    }
 }

@@ -1,6 +1,7 @@
 
 let cvBtn=document.getElementById("cv-btn");
 let submitBtn=document.getElementById("submit");
+let bar=document.getElementById("bar-btn");
 
 cvBtn.addEventListener("click",function(){
     alert("Resume Download Sucessfully")
@@ -18,3 +19,14 @@ submitBtn.addEventListener("click",function(){
     }
 })
 
+
+let ul=document.querySelector("ul");
+bar.addEventListener("click",function(){
+    ul.classList.toggle("showData");
+
+    if(ul.className=="showData"){
+        bar.className="fa-solid fa-xmark";
+    }else{
+        bar.className="fa-solid fa-bars";
+    }
+})
